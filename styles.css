@@ -339,3 +339,66 @@ header .login-signup button {
 }
 
 /* Products Add End */
+
+
+/* Different Category Add Start */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+
+    margin: 10px 0;
+    border: solid 1px rgb(19, 18, 18);
+    border-bottom: none;
+    border-left: none;
+    width: 100%;
+}
+
+.category {
+    background-color: #fff;
+    padding: 15px;
+    border-left: solid rgb(19, 17, 17) 1px;
+    border-bottom: solid rgb(19, 17, 17) 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.category:hover {
+    border: solid rgb(15, 14, 14) 1px;
+}
+
+.category img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.category h3 {
+    margin: 0;
+    font-size: 12px;
+    color: black;
+}
+
+.category a:hover {
+    color: #4507ff;
+}
+
+.category a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .categories {
+        grid-template-columns: repeat(5, 1fr);
+        width: 766px;
+    }
+}
+/* Different Category Add End */
